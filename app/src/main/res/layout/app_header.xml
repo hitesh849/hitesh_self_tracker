@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/h_dim_45"
+        android:layout_alignParentLeft="true"
+        >
+        <LinearLayout
+            android:id="@+id/llBackHeader"
+            android:layout_width="@dimen/h_dim_52"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:background="?attr/actionBarItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/imgBackHeaderArrow"
+                android:layout_width="@dimen/h_dim_24"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_arrow_back_white_24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/h_dim_8"
+                android:foregroundTint="@color/white"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/LeftHederSpaceLeftSide"
+            android:layout_width="16dp"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rlHeaderNameLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/h_dim_3"
+            android:gravity="center"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:id="@+id/imgToolbarNameLeft"
+                android:layout_width="@dimen/dim_96"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h_text_dim_16"
+                android:src="@mipmap/back_icon"
+                android:layout_alignParentLeft="true"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/txtToolbarNameLeft"
+                android:layout_width="@dimen/dim_96"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/h_text_dim_16"
+                android:text="@string/home"
+                android:textColor="@color/white"
+                android:layout_alignParentLeft="true"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        >
+        <RelativeLayout
+            android:id="@+id/rlHeaderNamecenter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/txtHeaderNamecenter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/h_text_dim_16"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:text="Healthcius"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderReport"
+            android:layout_width="@dimen/h_dim_52"
+            android:layout_height="@dimen/h_dim_52"
+            android:padding="@dimen/h_dim_3"
+            android:visibility="gone"
+            android:background="?attr/actionBarItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/imgHeaderReport"
+                android:layout_width="@dimen/h_dim_20"
+                android:layout_height="@dimen/h_dim_20"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back_icon"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderNotification"
+            android:layout_width="@dimen/h_dim_52"
+            android:layout_height="@dimen/h_dim_52"
+            android:padding="@dimen/h_dim_3"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="?attr/actionBarItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/imgHeaderNotification"
+                android:layout_width="@dimen/h_dim_20"
+                android:layout_height="@dimen/h_dim_20"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/back_icon"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderLogout"
+            android:layout_width="@dimen/h_dim_52"
+            android:layout_height="@dimen/h_dim_52"
+            android:padding="@dimen/h_dim_3"
+            android:layout_marginRight="@dimen/h_dim_12"
+            android:layout_alignParentRight="true"
+            android:background="?attr/actionBarItemBackground"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/imgHeaderLogout"
+                android:layout_width="@dimen/h_dim_20"
+                android:layout_height="@dimen/h_dim_20"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/logout_icon"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rlHeaderMenu"
+            android:layout_width="@dimen/h_dim_52"
+            android:layout_height="@dimen/h_dim_52"
+            android:padding="@dimen/h_dim_3"
+            android:layout_marginRight="@dimen/h_dim_12"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="?attr/actionBarItemBackground"
+            >
+
+            <ImageView
+                android:id="@+id/imgHeaderMenu"
+                android:layout_width="@dimen/h_dim_20"
+                android:layout_height="@dimen/h_dim_20"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/logout_icon"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

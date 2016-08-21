@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screen_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/productHeader"
+        layout="@layout/app_header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/llDeviceIMEI"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_58"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim_16"
+        android:paddingRight="@dimen/dim_16">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/device_imei"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dim_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDeviceImeiSetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h_text_dim_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:id="@+id/llTrackingInterval"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_58"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim_16"
+        android:paddingRight="@dimen/dim_16">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tracking_interval"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dim_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTrackingInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h_text_dim_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:background="@color/light_grey" />
+
+
+    <LinearLayout
+        android:id="@+id/llChatInterval"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_58"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dim_16"
+        android:paddingRight="@dimen/dim_16">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chat_interval"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dim_14"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtChatInterval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/h_text_dim_12" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_1"
+        android:background="@color/light_grey" />
+</LinearLayout>
